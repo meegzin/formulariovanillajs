@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0.3);
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header{
+    background-color: #eee;
+    padding: 20px;
+}
+
+.form{
+    padding: 20px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form i{
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    visibility: hidden;
+}
+
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button{
+    background-color: #fc00ff;
+    border: 2px solid #fc00ff;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Erro e sucesso*/
+
+.form-control.sucesso input{
+    border-color: #2ecc71;
+}
+
+.form-control.erro input{
+    border-color: #e74c6c;
+}
+
+.form-control.sucesso i.fa-check-circle{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-control.erro i.fa-exclamation-circle{
+    visibility: visible;
+    color: #e74c6c;
+}
+
+.form-control.erro small{
+    visibility: visible;
+    color: #e74c6c;
+}
